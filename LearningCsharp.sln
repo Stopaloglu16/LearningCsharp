@@ -9,13 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DBB822CB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundamentals", "Fundamentals", "{644C53D4-472A-4DC3-9309-8283760C5076}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Src\Fundamentals\Exceptions\Exceptions.csproj", "{BDF18B67-2090-4E59-8DF6-87C6D4A62DE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Src\Fundamentals\Exceptions\Exceptions.csproj", "{BDF18B67-2090-4E59-8DF6-87C6D4A62DE7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyConcepts", "KeyConcepts", "{AA8506BD-7323-40FA-911B-E0BF80E619A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nullable", "Src\KeyConcepts\Nullable\Nullable.csproj", "{C0818202-C0C7-46E8-A470-9D2DA422AEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nullable", "Src\KeyConcepts\Nullable\Nullable.csproj", "{C0818202-C0C7-46E8-A470-9D2DA422AEEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyConceptConsoleApp", "Src\KeyConcepts\KeyConceptConsoleApp\KeyConceptConsoleApp.csproj", "{3D0E7AF0-F2A3-467E-965F-5B5225EFA745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyConceptConsoleApp", "Src\KeyConcepts\KeyConceptConsoleApp\KeyConceptConsoleApp.csproj", "{3D0E7AF0-F2A3-467E-965F-5B5225EFA745}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LearnToProgram", "LearnToProgram", "{0F4DB691-5AE4-42D4-90A2-F6B61FA9AEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionSamples", "Src\LearnToProgram\IntroductionSamples\IntroductionSamples.csproj", "{4EA1227D-6D5F-41FA-BD9C-040E0A6252F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LanguageReference", "LanguageReference", "{0FB19B78-B70F-4268-9198-6DCD26E97B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "Src\LanguageReference\AccessModifiers\AccessModifiers.csproj", "{0D9E182F-8CF9-47B1-97E6-8D30A78AD16E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +43,14 @@ Global
 		{3D0E7AF0-F2A3-467E-965F-5B5225EFA745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D0E7AF0-F2A3-467E-965F-5B5225EFA745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D0E7AF0-F2A3-467E-965F-5B5225EFA745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA1227D-6D5F-41FA-BD9C-040E0A6252F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA1227D-6D5F-41FA-BD9C-040E0A6252F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA1227D-6D5F-41FA-BD9C-040E0A6252F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA1227D-6D5F-41FA-BD9C-040E0A6252F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9E182F-8CF9-47B1-97E6-8D30A78AD16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9E182F-8CF9-47B1-97E6-8D30A78AD16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9E182F-8CF9-47B1-97E6-8D30A78AD16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9E182F-8CF9-47B1-97E6-8D30A78AD16E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +61,10 @@ Global
 		{AA8506BD-7323-40FA-911B-E0BF80E619A4} = {B3896FF6-4862-4A26-A330-4BE5A53543F6}
 		{C0818202-C0C7-46E8-A470-9D2DA422AEEF} = {AA8506BD-7323-40FA-911B-E0BF80E619A4}
 		{3D0E7AF0-F2A3-467E-965F-5B5225EFA745} = {AA8506BD-7323-40FA-911B-E0BF80E619A4}
+		{0F4DB691-5AE4-42D4-90A2-F6B61FA9AEED} = {B3896FF6-4862-4A26-A330-4BE5A53543F6}
+		{4EA1227D-6D5F-41FA-BD9C-040E0A6252F8} = {0F4DB691-5AE4-42D4-90A2-F6B61FA9AEED}
+		{0FB19B78-B70F-4268-9198-6DCD26E97B66} = {B3896FF6-4862-4A26-A330-4BE5A53543F6}
+		{0D9E182F-8CF9-47B1-97E6-8D30A78AD16E} = {0FB19B78-B70F-4268-9198-6DCD26E97B66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E4E2E10-55A4-4C8F-B501-DCB068C12862}
