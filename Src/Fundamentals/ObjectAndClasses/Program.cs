@@ -8,5 +8,7 @@ Console.WriteLine("Hello, World!");
 
 //InterfaceSample.InterfaceSampleMethod();
 
-AnonymousTypeSample.AnonymousTypeSampleMethod();
+//AnonymousTypeSample.AnonymousTypeSampleMethod();
+
+PolymorphismSample.PolymorphismSampleMethod();
 
