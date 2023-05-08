@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObjectAndClasses
+﻿namespace ObjectAndClasses
 {
     public class RecordsSample
     {
@@ -13,9 +7,9 @@ namespace ObjectAndClasses
             Person person1 = new("Nancy", "Davolio", "123") { PhoneNumbers = new string[1] };
             Console.WriteLine(person1);
             // output: Person { FirstName = Nancy, LastName = Davolio, PhoneNumbers = System.String[] }
- 
+
             Console.WriteLine(person1.Id);
-            
+
 
             Person person2 = person1 with { FirstName = "John" };
             Console.WriteLine(person2);
@@ -54,7 +48,7 @@ namespace ObjectAndClasses
 
             Console.WriteLine(student);
             student.Salary = 6;
-            
+
             Console.WriteLine(student == person1);
 
             student.Grade = 5;
@@ -71,14 +65,14 @@ namespace ObjectAndClasses
     }
 
 
-    internal record Student: Person
+    internal record Student : Person
     {
         public Student(string FirstName, string LastName, string Id) : base(FirstName, LastName, Id)
         {
         }
 
         public double Grade { get; set; }
-        
+
     }
 
 }

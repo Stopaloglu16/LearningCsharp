@@ -10,5 +10,6 @@ Console.WriteLine("Hello, World!");
 
 //AnonymousTypeSample.AnonymousTypeSampleMethod();
 
-PolymorphismSample.PolymorphismSampleMethod();
+//PolymorphismSample.PolymorphismSampleMethod();
+
 

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObjectAndClasses
+﻿namespace ObjectAndClasses
 {
     public class AnonymousTypeSample
     {
@@ -33,7 +26,7 @@ namespace ObjectAndClasses
 
     internal class Product
     {
-        public Product(string _Name )
+        public Product(string _Name)
         {
             Name = _Name;
         }

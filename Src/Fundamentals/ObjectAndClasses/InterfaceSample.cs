@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObjectAndClasses
+﻿namespace ObjectAndClasses
 {
     public class InterfaceSample
     {
@@ -12,7 +6,7 @@ namespace ObjectAndClasses
         {
             Car car = new Car();
 
-            var daysCount =  car.ColllectionDays(car);
+            var daysCount = car.ColllectionDays(car);
 
             Console.WriteLine("days " + daysCount.ToString()); ;
         }
@@ -21,7 +15,7 @@ namespace ObjectAndClasses
     interface IEquatable<T>
     {
         bool Equals(T obj);
-        
+
     }
 
     interface ICollection<T>
@@ -51,7 +45,7 @@ namespace ObjectAndClasses
             Console.WriteLine("5");
             return 5;
         }
-      
+
     }
 
 

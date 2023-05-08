@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObjectAndClasses
+﻿namespace ObjectAndClasses
 {
     public class PolymorphismSample
     {
@@ -29,7 +23,7 @@ namespace ObjectAndClasses
                 shape.Draw();
                 shape.Paint();
             }
-            
+
         }
     }
 
@@ -46,7 +40,7 @@ namespace ObjectAndClasses
         public int Y { get; private set; }
         public int Height { get; set; }
         public int Width { get; set; }
-        public string? ColourName { get; set; }   
+        public string? ColourName { get; set; }
 
         // Virtual method
         public virtual void Draw()
@@ -56,7 +50,7 @@ namespace ObjectAndClasses
 
         public virtual void Paint()
         {
-            Console.WriteLine("Paint to " + ColourName );
+            Console.WriteLine("Paint to " + ColourName);
         }
     }
 
@@ -130,6 +124,8 @@ namespace ObjectAndClasses
         {
             Console.WriteLine("Paint to " + ColourName);
             base.Paint();
+
+
         }
     }
 
