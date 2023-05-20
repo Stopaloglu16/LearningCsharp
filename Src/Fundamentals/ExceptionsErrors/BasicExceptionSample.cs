@@ -71,6 +71,10 @@ namespace ExceptionsErrors
         {
             FunctionName = name;
         }
+
+        public CustomException(string message, Exception innerexception) : base(message, innerexception)
+        {
+        }
     }
 
 
