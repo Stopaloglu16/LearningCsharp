@@ -1,7 +1,4 @@
-﻿using System;
-using System.Net.WebSockets;
-
-namespace ExceptionsErrors
+﻿namespace ExceptionsErrors
 {
     public class BasicExceptionSample
     {

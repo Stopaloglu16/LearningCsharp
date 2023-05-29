@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FundamentalTutorial
+﻿namespace FundamentalTutorial
 {
     public class ObjectOriented
     {
         public static void Create()
         {
+            Console.WriteLine("Object Oriented Tutorial");
+
             var giftCard = new GiftCardAccount("gift card", 100, 50);
             giftCard.MakeWithdrawal(20, DateTime.Now, "get expensive coffee");
             giftCard.MakeWithdrawal(50, DateTime.Now, "buy groceries");
@@ -26,7 +22,7 @@ namespace FundamentalTutorial
             Console.WriteLine(savings.GetAccountHistory());
 
 
-            var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+            var lineOfCredit = new LineOfCreditAccount("line of credit", 0, 2000);
             // How much is too much to borrow?
             lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
             lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
@@ -68,6 +64,10 @@ namespace FundamentalTutorial
                 MakeWithdrawal(interest, DateTime.Now, "Charge monthly interest");
             }
         }
+
+        protected override Transaction? CheckWithdrawalLimit(bool isOverdrawn) =>
+                    isOverdrawn ? new Transaction(-20, DateTime.Now, "Apply overdraft fee") : default;
+
     }
 
     public class GiftCardAccount : BankAccount

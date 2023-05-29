@@ -6,4 +6,8 @@ Console.WriteLine("Hello, World!");
 //IntroductionClasses.Create();
 
 
-ObjectOriented.Create();
+//ObjectOriented.Create();
+
+//Inheritance.Create();
+
+ConvertingTypes.Create();
