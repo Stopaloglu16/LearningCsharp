@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionsErrors", "Src\Fun
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorials", "Tutorials", "{7857D602-FA14-481B-AAA5-486FF3495E9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundamentalTutorial", "Src\Tutorials\FundamentalTutorial\FundamentalTutorial.csproj", "{34D93DF0-26BD-4C2A-B9C8-F742697CFD33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundamentalTutorial", "Src\Tutorials\FundamentalTutorial\FundamentalTutorial.csproj", "{34D93DF0-26BD-4C2A-B9C8-F742697CFD33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousApp", "Src\Fundamentals\AsynchronousApp\AsynchronousApp.csproj", "{267BD8C9-41EC-40F8-AC9C-E423368E5498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{34D93DF0-26BD-4C2A-B9C8-F742697CFD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D93DF0-26BD-4C2A-B9C8-F742697CFD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D93DF0-26BD-4C2A-B9C8-F742697CFD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267BD8C9-41EC-40F8-AC9C-E423368E5498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267BD8C9-41EC-40F8-AC9C-E423368E5498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267BD8C9-41EC-40F8-AC9C-E423368E5498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267BD8C9-41EC-40F8-AC9C-E423368E5498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{8BC76647-949A-4B42-A6E2-58C13B731D60} = {644C53D4-472A-4DC3-9309-8283760C5076}
 		{7857D602-FA14-481B-AAA5-486FF3495E9F} = {B3896FF6-4862-4A26-A330-4BE5A53543F6}
 		{34D93DF0-26BD-4C2A-B9C8-F742697CFD33} = {7857D602-FA14-481B-AAA5-486FF3495E9F}
+		{267BD8C9-41EC-40F8-AC9C-E423368E5498} = {644C53D4-472A-4DC3-9309-8283760C5076}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E4E2E10-55A4-4C8F-B501-DCB068C12862}
