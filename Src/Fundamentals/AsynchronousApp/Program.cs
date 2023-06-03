@@ -10,8 +10,12 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine($"Finish {DateTime.Now}");
 
 
-Console.WriteLine($"Start Async {DateTime.Now}");
+//Console.WriteLine($"Start Async {DateTime.Now}");
 
-await AsynchronousBreakfast.Create();
+//await AsynchronousBreakfast.Create();
 
-Console.WriteLine($"Finish Async {DateTime.Now}");
+//Console.WriteLine($"Finish Async {DateTime.Now}");
+
+
+
+await ProcessAsync.SumPageSizesAsync();
