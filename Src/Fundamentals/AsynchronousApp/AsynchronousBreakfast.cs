@@ -82,7 +82,7 @@ namespace AsynchronousApp
 
             return new Toast();
         }
-
+       
         private static async Task<Bacon> FryBaconAsync(int slices)
         {
             Console.WriteLine($"putting {slices} slices of bacon in the pan {DateTime.Now.Millisecond}");
