@@ -10,18 +10,22 @@ namespace AsynchronousApp
         public static async Task SumPageSizesAsync()
         {
             var stopwatch = Stopwatch.StartNew();
-            IEnumerable<Task<int>> downloadTasksQuery =
-            from url in s_urlList
-            select ProcessUrlAsync(url, s_client);
+            
+            IEnumerable<Task<int>> downloadTasksQuery = from url in s_urlList
+                                                        select ProcessUrlAsync(url, s_client);
+
             List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
             int total = 0;
+
             while (downloadTasks.Any())
             {
                 Task<int> finishedTask = await Task.WhenAny(downloadTasks);
                 downloadTasks.Remove(finishedTask);
                 total += await finishedTask;
             }
+
             stopwatch.Stop();
+
             Console.WriteLine($"\nTotal bytes returned:  {total:#,#}");
             Console.WriteLine($"Elapsed time:          {stopwatch.Elapsed}\n");
         }
