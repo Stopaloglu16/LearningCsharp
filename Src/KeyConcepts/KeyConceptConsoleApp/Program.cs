@@ -1,14 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!" + DateTime.MinValue);
+using NullableLibrary;
+
+Console.WriteLine("Hello, World!");
 
 
-// Declare variable and assign it as null.
-FooBar fooBar = null;
+CreateNullable createNullable = new CreateNullable();
+var newPerson = createNullable.CreatePerson();
 
-// Conditionally dereference variable.
-var str = fooBar?.ToString();
-Console.Write(str);
-
-// The FooBar type definition.
-record FooBar(int Id, string Name);
+Console.WriteLine(newPerson.firstname?.ToString());
+Console.WriteLine(newPerson.surname?.ToString());
+Console.WriteLine(newPerson.age.ToString());
+Console.WriteLine(newPerson.department.ToString());
 
