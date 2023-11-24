@@ -12,21 +12,17 @@ namespace WhereIfDemo
         public string TrackingNumber { get; set; }
         public int CountryId { get; set; }
         public int Weight { get; set; }
-
-
     }
 
   
 
     public class Model
     {
-
         public static IQueryable<Parcel> CreateParcelList()
         {
             var list = new List<Parcel>();
 
             Random random = new Random();
-
             
             for (int i = 1; i < 10; i++)
             {
