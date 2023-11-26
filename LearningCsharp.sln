@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppWalkthrough", "Sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppFileDirectories", "Src\Linq\ConsoleAppFileDirectories\ConsoleAppFileDirectories.csproj", "{FFBDCD26-E75F-4C17-9F65-24E81F10988C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppJoins", "Src\Linq\ConsoleAppJoins\ConsoleAppJoins.csproj", "{B06D00C5-BC93-427A-B84E-2A0930D021DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{FFBDCD26-E75F-4C17-9F65-24E81F10988C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFBDCD26-E75F-4C17-9F65-24E81F10988C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFBDCD26-E75F-4C17-9F65-24E81F10988C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06D00C5-BC93-427A-B84E-2A0930D021DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06D00C5-BC93-427A-B84E-2A0930D021DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06D00C5-BC93-427A-B84E-2A0930D021DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06D00C5-BC93-427A-B84E-2A0930D021DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +143,7 @@ Global
 		{71F9D8A8-075E-45E4-8252-B393DF1A2047} = {1C25FCBA-38FB-4A98-92C3-4ABABF64D56F}
 		{3C3E132B-E8DC-4449-9A9D-AF12D16DE614} = {1C25FCBA-38FB-4A98-92C3-4ABABF64D56F}
 		{FFBDCD26-E75F-4C17-9F65-24E81F10988C} = {1C25FCBA-38FB-4A98-92C3-4ABABF64D56F}
+		{B06D00C5-BC93-427A-B84E-2A0930D021DD} = {1C25FCBA-38FB-4A98-92C3-4ABABF64D56F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E4E2E10-55A4-4C8F-B501-DCB068C12862}
