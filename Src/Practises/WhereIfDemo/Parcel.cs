@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WhereIfDemo
+﻿namespace WhereIfDemo
 {
     public class Parcel
     {
@@ -14,7 +8,7 @@ namespace WhereIfDemo
         public int Weight { get; set; }
     }
 
-  
+
 
     public class Model
     {
@@ -23,13 +17,13 @@ namespace WhereIfDemo
             var list = new List<Parcel>();
 
             Random random = new Random();
-            
+
             for (int i = 1; i < 10; i++)
             {
                 list.Add(new Parcel
                 {
                     Id = i,
-                    TrackingNumber = "BARCODE" + random.Next(10,99) + DateTime.Now.Millisecond.ToString("D3") + i.ToString("D2"),
+                    TrackingNumber = "BARCODE" + random.Next(10, 99) + DateTime.Now.Millisecond.ToString("D3") + i.ToString("D2"),
                     CountryId = random.Next(1, 10),
                     Weight = random.Next(1, 1000)
                 });

@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using System.Numerics;
-
-namespace KeyConceptLibrary
+﻿namespace KeyConceptLibrary
 {
     public abstract class Motorcycle
     {
@@ -69,7 +66,7 @@ namespace KeyConceptLibrary
         public string MiddleName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-    
+
         internal static PersonInfo RetrieveInfoById(string id)
         {
             throw new NotImplementedException();

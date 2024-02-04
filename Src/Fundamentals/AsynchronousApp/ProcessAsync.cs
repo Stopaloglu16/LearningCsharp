@@ -10,7 +10,7 @@ namespace AsynchronousApp
         public static async Task SumPageSizesAsync()
         {
             var stopwatch = Stopwatch.StartNew();
-            
+
             IEnumerable<Task<int>> downloadTasksQuery = from url in s_urlList
                                                         select ProcessUrlAsync(url, s_client);
 

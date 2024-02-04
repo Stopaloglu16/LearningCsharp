@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FundamentalTutorial
+﻿namespace FundamentalTutorial
 {
     public class ConvertingTypes
     {
@@ -50,7 +44,7 @@ namespace FundamentalTutorial
             }
         }
 
-       
+
         static void UseAsOperator(object o)
         {
             Mammal? m = o as Mammal;
