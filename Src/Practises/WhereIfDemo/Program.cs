@@ -3,6 +3,8 @@ using WhereIfDemo;
 
 Console.WriteLine("Hello, WhereIf!");
 
+Console.WriteLine("It calls the WhereIf when the filter been value, it activates");
+
 WhereIfFilter whereIfFilter = new WhereIfFilter();
 
 var myList = Model.CreateParcelList();

@@ -4,17 +4,20 @@
     {
         public static void Create()
         {
-            var turnip = SomeRootVegetable.Turnip;
+            //var turnip = SomeRootVegetable.Turnip;
 
-            var spring = Seasons.Spring;
-            var startingOnEquinox = Seasons.Spring | Seasons.Autumn;
-            var theYear = Seasons.All;
+            //var spring = Seasons.Spring;
+            //var startingOnEquinox = Seasons.Spring | Seasons.Autumn;
+            //var theYear = Seasons.All;
 
-            Console.WriteLine(turnip);
-            Console.WriteLine(spring);
-            Console.WriteLine(startingOnEquinox);
-            Console.WriteLine(theYear);
+            //Console.WriteLine(turnip);
+            //Console.WriteLine(spring);
+            //Console.WriteLine(startingOnEquinox);
+            //Console.WriteLine(theYear);
 
+
+            var test = AllowedPaymentSchemes.Bacs;
+            Console.WriteLine(test);
         }
     }
 
@@ -34,5 +37,13 @@
         Winter = 4,
         Spring = 8,
         All = Summer | Autumn | Winter | Spring
+    }
+
+
+    public enum AllowedPaymentSchemes
+    {
+        FasterPayments = 1 << 0,
+        Bacs = 1 << 1,
+        Chaps = 1 << 2
     }
 }
