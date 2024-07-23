@@ -9,7 +9,8 @@
             var shipment = new { address = "Nowhere St.", product };
             var shipmentWithBonus = new { address = "Somewhere St.", product, bonus };
 
-            //product.Name -> Error	CS0746 Invalid anonymous type member declarator. Anonymous type members must be declared with a member assignment, simple name or member access.	
+            //product.Name -> Error	CS0746 Invalid anonymous type member declarator.
+            //Anonymous type members must be declared with a member assignment, simple name or member access.	
             //var shipmentWithBonus1 = new { address = "Somewhere St.", product.Name = "chair", bonus };
 
             Console.WriteLine(shipmentWithBonus.product.Name);
@@ -18,9 +19,9 @@
             //Creatint a new instance of an anonymous type where one/more properties have new values
             var apple = new { Item = "apples", Price = 1.35 };
             var onSale = apple with { Price = 0.79 };
+
             Console.WriteLine(apple);
             Console.WriteLine(onSale);
-
         }
     }
 
@@ -32,7 +33,5 @@
         }
 
         public string Name { get; set; }
-
     }
-
 }

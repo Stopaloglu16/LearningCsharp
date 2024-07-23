@@ -1,5 +1,6 @@
 ﻿namespace ObjectAndClasses
 {
+
     public class RecordsSample
     {
         public static void RecordsSampleMethod()

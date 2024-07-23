@@ -37,9 +37,10 @@
         public bool Equals(Car? car)
         {
             return (this.Make, this.Model, this.Year) ==
-                (car?.Make, car?.Model, car?.Year);
+                   (car?.Make, car?.Model, car?.Year);
         }
 
+        // Implementation of ICollection<T> interface
         public int ColllectionDays(Car car)
         {
             Console.WriteLine("5");
