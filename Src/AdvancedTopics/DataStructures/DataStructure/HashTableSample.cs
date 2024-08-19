@@ -11,7 +11,7 @@ internal class HashTableSample
         ages.Add("Jon1", 27);
 
         ages.Remove("Jon1");
-        
-        Console.WriteLine("ContainsKey: {0}", ages.ContainsKey("Jon")); 
+
+        Console.WriteLine("ContainsKey: {0}", ages.ContainsKey("Jon"));
     }
 }

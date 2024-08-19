@@ -6,7 +6,7 @@ internal class LinkedListSample
     {
         string[] words = { "A1", "A2", "A3" };
         LinkedList<string> sentence = new LinkedList<string>(words);
-        
+
         Display(sentence, "The linked list values:");
 
         sentence.AddFirst("A0");
