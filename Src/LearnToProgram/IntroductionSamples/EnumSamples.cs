@@ -1,7 +1,10 @@
-﻿namespace IntroductionSamples
+﻿using System.Timers;
+
+namespace IntroductionSamples
 {
     public class EnumSamples
     {
+        
         public static void Create()
         {
             //var turnip = SomeRootVegetable.Turnip;
