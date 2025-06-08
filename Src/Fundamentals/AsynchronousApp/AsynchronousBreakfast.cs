@@ -18,6 +18,9 @@
             var baconTask = FryBaconAsync(3);
             var toastTask = MakeToastWithButterAndJamAsync(2);
 
+            //OR
+            //await Task.WhenAll(eggsTask, baconTask, toastTask);
+
             var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
             while (breakfastTasks.Count > 0)
             {
@@ -71,7 +74,7 @@
                 Console.WriteLine($"Putting a slice of bread in the toaster {DateTime.Now.Millisecond}");
             }
             Console.WriteLine($"Start toasting... {DateTime.Now.Millisecond}");
-            await Task.Delay(6000);
+            await Task.Delay(3000);
             Console.WriteLine($"Remove toast from toaster {DateTime.Now.Millisecond}");
 
             return new Toast();
@@ -87,7 +90,7 @@
                 Console.WriteLine($"flipping a slice of bacon {DateTime.Now.Millisecond}");
             }
             Console.WriteLine($"cooking the second side of bacon... {DateTime.Now.Millisecond}");
-            await Task.Delay(4000);
+            await Task.Delay(3000);
             Console.WriteLine($"Put bacon on plate {DateTime.Now.Millisecond}");
 
             return new Bacon();
@@ -96,10 +99,10 @@
         private static async Task<Egg> FryEggsAsync(int howMany)
         {
             Console.WriteLine($"Warming the egg pan... {DateTime.Now.Millisecond}");
-            await Task.Delay(5000);
+            await Task.Delay(3000);
             Console.WriteLine($"cracking {howMany} eggs {DateTime.Now.Millisecond}");
             Console.WriteLine($"cooking the eggs ... {DateTime.Now.Millisecond}");
-            await Task.Delay(10000);
+            await Task.Delay(3000);
             Console.WriteLine($"Put eggs on plate {DateTime.Now.Millisecond}");
 
             return new Egg();

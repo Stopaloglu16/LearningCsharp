@@ -1,20 +1,29 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AsynchronousApp;
+using System.Diagnostics;
 
 Console.WriteLine("Hello, World!");
 
-//Console.WriteLine($"Start {DateTime.Now}");
 
-//SynchronousBreakfast.Create();
+var timer = new Stopwatch();
+timer.Start();
 
-//Console.WriteLine($"Finish {DateTime.Now}");
+Console.WriteLine($"Start");
+
+SynchronousBreakfast.Create();
+
+timer.Stop();
+Console.WriteLine("--==Finish " + timer.ElapsedMilliseconds + "==--");
 
 
-Console.WriteLine($"Start Async {DateTime.Now}");
+timer.Restart();
+Console.WriteLine($"Start Async");
 
 await AsynchronousBreakfast.Create();
 
-Console.WriteLine($"Finish Async {DateTime.Now}");
+timer.Stop();
+Console.WriteLine("--==Finish Async " + timer.ElapsedMilliseconds + "==--");
+
 
 
 

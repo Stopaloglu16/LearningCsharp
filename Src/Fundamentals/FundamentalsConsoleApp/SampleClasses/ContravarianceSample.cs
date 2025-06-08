@@ -23,6 +23,10 @@
             Console.WriteLine("Method3");
 
             return new Small();
+
+
+            
+
         }
 
         /// <summary>
